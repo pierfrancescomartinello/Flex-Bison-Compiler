@@ -1,0 +1,38 @@
+Città: ROMA;
+Location: Stadio Olimpico;
+Data: 03-07-2018;
+Biglietti cat.A: (O:3355; M:473; J:327; S:1125; D:238; A:135);
+Biglietti cat.B: (O:7234; M:922; J:780; S:1553; D:132; A:62);
+Biglietti cat.C: (O:12288; M:1130; J:1118; S:323; D:52; A:89);
+Biglietti cat.D: (O:15180; M:1275; J:1510; S:35; D:0; A:0);
+********************
+Città: MILANO;
+Location: Stadio San Siro;
+Data: 06-07-2018;
+Biglietti cat.A: (O:3585; M:552; J:543; S:1780; D:340; A:200);
+Biglietti cat.B: (O:7940; M:1303; J:1310; S:1087; D:250; A:110);
+Biglietti cat.C: (O:8790; M:2550; J:2550; S:1960; D:100; A:50);
+Biglietti cat.D: (O:13770; M:2739; J:2431; S:60; D:0; A:0);
+********************
+Città: REGGIO EMILIA;
+Location: Campovolo;
+Data: 12-07-2018;
+Biglietti cat.A:(O:4000; M:1500; J:1800; S:2500; D:400; A:250);
+Biglietti cat.B: (O:7500; M:2800; J:2500; S:2600; D:250; A:350);
+Biglietti cat.C: (O:9120; M:2245; J:4120; S:3766;D:55; A:85);
+Biglietti cat.D: (O:10830; M:8350; J:6310; S:5770; D:0; A:0);
+********************
+$$$
+PREZZI BIGLIETTI
+PrezzoA --> 150 EURO.
+PrezzoB --> 110 EURO.
+PrezzoC --> 80 EURO.
+PrezzoD --> 50 EURO.
+++++++++++++++++++++
+SCONTI
+Ordinari: 0%
+Musicisti: 35%
+Junior : 40%
+Senior   : 50%
+Disabili: 70%
+Autorità: 100%

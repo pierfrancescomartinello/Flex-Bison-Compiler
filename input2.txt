@@ -1,0 +1,22 @@
+Città: ROMA;
+Location: Stadio;
+Data: 03-07-2018;
+Biglietti cat.A: (O:3355; M:473; J:327; P:2; S:1125; D:238; A:135);
+Biglietti cat.B: (O:7234; M:922; J:780; P:45; S:1553; D:132; A:62);
+Biglietti cat.C: (O:12288; M:1130; J:1118; P:27; S:323; D:52; A:89);
+********************
+$$$
+PREZZI BIGLIETTI
+PrezzoA --> 150 EURO.
+PrezzoB --> 110 EURO.
+PrezzoC --> 80 EURO.
+PrezzoD --> 50 EURO.
+++++++++++++++++++++
+SCONTI
+Ordinari: 0%
+Musicisti: 35%
+Junior : 40%
+Senior   : 50%
+Disabili: 70%
+Autorità: 100%
+Programmatori: 69%

@@ -1,0 +1,59 @@
+%{
+#include <string.h>
+#include <stdlib.h>
+#include "tournee.tab.h"
+%}
+%option noyywrap
+
+digit       [0-9]
+number      {digit}+
+
+
+space       [ \t]
+punct       [']
+letterup    [A-Z]
+letterlow   [a-zàèéìòù]
+
+location    {letterup}{letterlow}*(({space}|{punct}|{punct}{space}){letterup}{letterlow}+)*{punct}?
+city        {letterup}+(({punct}{space}|{space}){letterup}+)*{punct}?
+PRE
+%%
+
+"$$$\nPREZZI BIGLIETTI"             {return(SEP1);}
+"********************"              {return(SEP);}
+"++++++++++++++++++++\nSCONTI"      {return(SEP2);}
+
+";"                                 {return(DIV);}
+":"                                 {return(OP);}
+"("                                 {return(OPEN);}
+")"                                 {return(CLOSED);}
+"%"                                 {return(PERC);}
+"EURO."                             {return(VALUE);}
+"-->"                               {return(ARR);}
+"-"                                 {return(DATEDIV);}
+
+{location}                          {yylval.string_t = strdup(yytext); 
+                                    if(strlen(yytext) == 1){
+                                        return(NOMET);
+                                    }else if(strcmp(yytext, "Prezzo") == 0){
+                                        return(PREZ_PREF);
+                                    }else{
+                                        return(NOMEL);
+                                    }}
+                                    
+{city}                              {yylval.string_t = strdup(yytext); 
+                                    if(strlen(yytext) == 1){
+                                        return(NOMET);
+                                    }else{
+                                        return(NOMEC);
+                                    }}
+
+{number}                            {yylval.int_t = atoi(yytext); return(NUM);}
+
+"Città:"                            {return(NOMEC_PREF);}
+"Location:"                         {return(NOMEL_PREF);}
+"Data:"                             {return(DATE_PREF);}
+"Biglietti cat."                    {return(BIGL_PREF);}
+
+[ \t\n] ;
+%%
